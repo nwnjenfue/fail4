@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Medeo — стоматологическая клиника в Астане</title>
+<meta name="description" content="Medeo: стоматология в Астане. Имплантация, лечение, протезирование. Запись к врачу онлайн, личные кабинеты пациента и врача.">
+<link rel="stylesheet" href="css/style.css?v=24">
+<link rel="stylesheet" href="css/landing.css?v=24">
+</head>
+<body class="landing">
+
+<nav class="gnav" id="gnav">
+  <a class="lg" href="index.html" aria-label="Medeo"><img src="img/medeo.svg" alt="Medeo"></a>
+  <div class="gl"><a href="#services">Услуги</a><a href="#process">Как мы лечим</a><a href="#indications">Показания</a><a href="#doctors">Врачи</a><a href="#clinic">Контакты</a><a href="#faq">Вопросы</a></div>
+  <div class="gr"><button class="glass-pill" data-reg>Записаться <b>+</b></button><a class="round" href="tel:+77172000000" aria-label="Позвонить"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></a></div>
+</nav>
+
+<main>
+<section class="blk hero" id="top">
+  <div class="hc">
+    <span class="chip dk">Стоматология в Астане</span>
+    <h1><span>Улыбка, которой</span><b>вы будете гордиться</b></h1>
+    <p class="lead">Имплантация, лечение и протезирование там, где точность начинается до операции. Запись к врачу — онлайн.</p>
+    <button class="cta" data-reg>Записаться на приём <b>+</b></button>
+    <div class="hstats" id="facts"></div>
+  </div>
+  <img class="hdoc" src="img/cut/hero.png" alt="Врач клиники Medeo">
+  <div class="gchip g1" id="g1"></div>
+  <div class="gchip g2"><span class="gi"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Стерильность<br>по протоколу</span></div>
+  <form class="bar" id="book" autocomplete="off">
+    <label>Направление<select id="bSpec"></select></label>
+    <label>Врач<select id="bDoc"></select></label>
+    <label>Дата<select id="bDate"></select></label>
+    <label>Время<select id="bTime"></select></label>
+    <button class="cta s" id="bGo" disabled>Записаться <b>+</b></button>
+  </form>
+</section>
+
+<section class="blk svc" id="services">
+  <span class="chip">Услуги</span>
+  <h2>С чем к нам обращаются</h2>
+  <div class="arrows"><button id="sPrev" aria-label="Назад">←</button><button id="sNext" aria-label="Дальше">→</button></div>
+  <div class="track" id="track"></div>
+</section>
+
+<section class="proc" id="process">
+  <div class="proc-in" id="procIn">
+    <div class="proc-head"><span class="chip">Как мы лечим</span><h2>Лечение для <em>любого</em> клинического случая</h2></div>
+    <div class="orbit">
+      <i class="ring r1"></i><i class="ring r2"></i><i class="ring r3"></i>
+      <div class="glow"></div>
+      <img class="obj" src="img/dent/model.png" alt="3D-модель челюсти с имплантом">
+      <div class="pt p1" data-n="0"><span class="dot"></span><b>Консультация и снимок</b><p>Осмотр, 3D-снимок и честный план лечения с ценой до начала работы.</p><i>Подробнее +</i></div>
+      <div class="pt p2" data-n="1"><span class="dot"></span><b>План лечения</b><p>Врач показывает результат на модели и объясняет каждый этап простыми словами.</p><i>Подробнее +</i></div>
+      <div class="pt p3" data-n="2"><span class="dot"></span><b>Лечение</b><p>Бережная анестезия, современные материалы и стерильные инструменты.</p><i>Подробнее +</i></div>
+      <div class="pt p4" data-n="3"><span class="dot"></span><b>Контроль и гарантия</b><p>Осмотры после лечения, заключение врача сразу в вашей медкарте.</p><i>Подробнее +</i></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk ind" id="indications">
+  <div class="ind-h"><h2>Когда пора прийти к стоматологу</h2><p>Если узнали себя хотя бы в одном пункте — запишитесь на консультацию. Осмотр поможет выбрать лечение без лишних процедур.</p></div>
+  <div class="irow">
+    <article><b>Болит или реагирует на холодное</b><p>Кариес и пульпит лучше лечить на раннем этапе.</p></article>
+    <article><b>Нет одного или нескольких зубов</b><p>Имплантация сохраняет соседние зубы и форму лица.</p></article>
+    <article><b>Нет всех зубов</b><p>Восстановление за один день по протоколу All-on-4.</p></article>
+    <article><b>Кровоточат дёсны</b><p>Профессиональная гигиена и лечение дёсен.</p></article>
+    <article><b>Хочется ровную улыбку</b><p>Виниры, элайнеры и отбеливание.</p></article>
+  </div>
+  <img class="wm" id="wm" src="img/medeo.svg" alt="" aria-hidden="true">
+</section>
+
+<section class="blk docs" id="doctors">
+  <div class="docs-h"><div><span class="chip">Врачи</span><h2>Найти врача и записаться</h2></div><div class="tabs" id="tabs"></div></div>
+  <div class="drow" id="wins"></div>
+</section>
+
+<section class="clinic-grid" id="clinic">
+  <div class="blk cl-photo">
+    <img src="img/dent/clinic.jpg" alt="Ресепшен клиники Medeo" loading="lazy">
+    <div class="glass-card">
+      <h2>Мы в Астане</h2>
+      <dl>
+        <div><dt>Адрес</dt><dd>пр. Мәңгілік Ел, 55А<br><span>Левый берег, остановка «Хан Шатыр»</span></dd></div>
+        <div><dt>Часы работы</dt><dd>Пн–Сб 09:00–19:00<br><span>Воскресенье — выходной</span></dd></div>
+        <div><dt>Контакты</dt><dd><a href="tel:+77172000000">+7 (7172) 00-00-00</a><br><a href="mailto:hello@medeo.kz">hello@medeo.kz</a></dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="blk cl-map"><iframe title="Карта Астаны" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=71.38%2C51.10%2C71.50%2C51.16&amp;layer=mapnik&amp;marker=51.1282%2C71.4304"></iframe></div>
+</section>
+
+<section class="roles" id="cabinet">
+  <article class="blk role dark">
+    <span class="chip lt">Пациентам</span>
+    <h2>План лечения и записи в одном кабинете</h2>
+    <ul><li>Запись и перенос времени без звонков</li><li>Медкарта: заключения и рекомендации врача</li><li>Профиль с вашим фото</li></ul>
+    <div class="btns"><button class="cta" data-reg>Создать кабинет <b>+</b></button><button class="ghost" data-login>Войти</button></div>
+  </article>
+  <article class="blk role">
+    <span class="chip">Врачам</span>
+    <h2>Расписание и пациенты на одном экране</h2>
+    <ul><li>Подтверждение записей в один клик</li><li>Заключение пишется в карточке приёма</li><li>Цена, часы и фото — в профиле</li></ul>
+    <div class="btns"><button class="cta" data-regdoc>Я врач <b>+</b></button></div>
+    <p class="note">Администратор управляет составом врачей, видит все записи и пациентов.</p>
+  </article>
+</section>
+
+<section class="blk faq" id="faq">
+  <div><span class="chip">Вопросы</span><h2>Частые вопросы</h2></div>
+  <div class="faqs">
+    <details open><summary>Как записаться?</summary><p>Выберите врача, дату и время на панели записи вверху страницы. Если кабинета ещё нет, система предложит его создать — это меньше минуты.</p></details>
+    <details><summary>Можно ли отменить или перенести запись?</summary><p>Да. В кабинете откройте «Мои записи» и нажмите «Перенести» или «Отменить». Время освободится для других пациентов.</p></details>
+    <details><summary>Больно ли лечить зубы?</summary><p>Мы используем современную анестезию, поэтому лечение проходит без боли. Если вы волнуетесь, скажите об этом врачу при записи.</p></details>
+    <details><summary>Как зарегистрироваться как врач?</summary><p>При регистрации выберите «Я врач» и укажите специальность. Цену, часы приёма и фото настроите в профиле.</p></details>
+    <details><summary>Где хранятся данные?</summary><p>Данные хранятся в базе PostgreSQL на сервере клиники, пароли — только в виде хеша. Это демо-версия, не вносите настоящие медицинские данные.</p></details>
+  </div>
+</section>
+
+<footer class="blk ft">
+  <div class="ft-in">
+    <div class="ft-b"><a class="lg" href="index.html" aria-label="Medeo"><img src="img/medeo.svg" alt="Medeo"></a><p>Стоматологическая клиника в Астане. Запись онлайн, личные кабинеты пациентов и врачей.</p></div>
+    <nav><b>Сайт</b><a href="#services">Услуги</a><a href="#doctors">Врачи</a><a href="#clinic">Контакты</a><a href="#faq">Вопросы</a></nav>
+    <nav><b>Кабинет</b><a href="#" data-login>Войти</a><a href="#" data-reg>Записаться</a><a href="#" data-regdoc>Для врачей</a></nav>
+    <nav><b>Связь</b><a href="tel:+77172000000">+7 (7172) 00-00-00</a><a href="mailto:hello@medeo.kz">hello@medeo.kz</a><span>пр. Мәңгілік Ел, 55А</span></nav>
+  </div>
+  <div class="ft-bot">© 2026 Medeo. Демо-версия: информация на сайте не заменяет консультацию врача.</div>
+</footer>
+</main>
+
+<div class="fcta" id="fcta"><span class="fl"><img src="img/medeo.svg" alt=""></span><span class="ft-t">Не знаете, к какому врачу идти? Подберём специалиста и время.</span><button class="cta s" id="fgo">Получить консультацию <b>+</b></button></div>
+
+<script src="js/shared.js?v=24"></script>
+<script src="js/landing.js?v=24"></script>
+</body>
+</html>

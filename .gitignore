@@ -1,0 +1,5 @@
+.env
+medeo
+*.tmp
+.DS_Store
+/data/medeo.json
